@@ -33,8 +33,7 @@ body{
     margin:2px;
     border: 1px solid black;
     border-radius: 12px;
-
-      cursor: pointer;
+    cursor: pointer;
 }
 
 #ip1:hover {
