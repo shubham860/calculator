@@ -20,52 +20,56 @@
   <body>
 
    <div class="container">
+
      <div class="gif">
     <img src="..\calculator\assests\images\1.gif" alt="gif">
      </div>
 
       <div class="jumbotron">
 
-            <input type="text" class="form-control" id="ip" placeholder="" style="text-align:right;">
+         <form name = "form">
+
+            <input type="text" class="form-control" name="text" id="ip" placeholder="" style="text-align:right;">
 
             <table class="table table-bordered" id="td">
           <tr>
-             <td><button onclick="display()">C</button></td>
-             <td><button onclick="display()"><</button></td>
-              <td><button onclick="display()">/</button></td>
-              <td><button onclick="display()">*</button></td>
+             <td><input type="button" id="ip1" onclick="clear()" value ="C"></td>
+             <td><input type="button" id="ip1" onclick="display()" value="<"></td>
+              <td><input type="button" id="ip1" onclick="display('/')" value="/"></td>
+            <td><input type="button" id="ip1" onclick="display('*')" value="*"></td>
           </tr>
           <tr>
-             <td><button onclick="display(7)">7</button></td>
-             <td><button onclick="display(8)">8</button></td>
-              <td><button onclick="display(9)">9</button></td>
-              <td><button onclick="display()">-</button></td>
+              <td><input type="button" id="ip1" onclick="display(7)" value="7"></td>
+              <td><input type="button" id="ip1" onclick="display(8)" value="8"></td>
+              <td><input type="button" id="ip1" onclick="display(9)" value="9"></td>
+              <td><input type="button" id="ip1" onclick="display('-')" value="-"></td>
           </tr>
           <tr>
-             <td><button onclick="display(4)">4</button></td>
-             <td><button onclick="display(5)">5</button></td>
-              <td><button onclick="display(6)">6</button></td>
-              <td><button onclick="display(7)">+</button></td>
+             <td><input type="button" id="ip1" onclick="display(4)" value="4"></td>
+             <td><input type="button" id="ip1" onclick="display(5)" value="5"></td>
+             <td><input type="button" id="ip1" onclick="display(6)" value="6"></td>
+             <td><input type="button" id="ip1" onclick="display('+')" value="+"></td>
           </tr>
           <tr>
-             <td><button onclick="display(1)">1</button></td>
-             <td><button onclick="display(2)">2</button></td>
-              <td><button onclick="display(3)">3</button></td>
-              <td rowspan="2"><button style="height:129px" onclick="display()">=</button></td>
+            <td><input type="button" id="ip1" onclick="display(1)" value="1"></td>
+            <td><input type="button" id="ip1" onclick="display(2)" value="2"></td>
+            <td><input type="button" id="ip1" onclick="display(3)" value="3"></td>
+              <td rowspan="2"><input type="button" style="height:129px" value="=" id="ip1" onclick="document.getElementById('ip').value = eval(document.getElementById('ip').value;">
           </tr>
           <tr>
-             <td><button onclick="display(4)">%</button></td>
-             <td><button onclick="display(0)">0</button></td>
-            <td><button onclick="display('.')">.</button></td>
+               <td><input type="button" id="ip1" onclick="display('%')" value="%"></td>
+             <td><input type="button" id="ip1" onclick="display(0)" value="0"></td>
+              <td><input type="button" id="ip1" onclick="display('.')" value="."></td>
           </tr>
 
 
           </table>
 
 
-
+ </form>
 
       </div>
+
    </div>
 
 
